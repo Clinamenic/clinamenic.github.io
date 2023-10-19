@@ -134,6 +134,20 @@ display: flex;
     margin-right: 10%;
 }
 
+.body-poem{
+    border-style: solid;
+    border-radius: 25px;
+    border-color: white;
+    border-width: 0px;
+    text-align: left;
+    font-size: 20;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 25px;
+    margin-left: 20%;
+    margin-right: 5%;
+}
+
 .body-list{
     border-style: solid;
     border-radius: 25px;
@@ -326,6 +340,12 @@ display: flex;
         font-size: small;
         margin-left: 0px;
         margin-right: 0px;
+    }
+
+    .body-poem{
+        margin-left: 0%;
+        margin-right: 0%;
+        font-size:x-small;
     }
 
 }
