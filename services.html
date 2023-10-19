@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Clinamenic LLC is a consultancy focused on virtual organization design and governance architecture."
+    />
+    <title>Services - Clinamenic LLC</title>
+    <link
+      rel="icon"
+      type="image/ico"
+      href="https://raw.githubusercontent.com/Clinamenic/clinamenic.github.io/main/favicon.ico"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <header class="header">
+      <nav class="navbar">
+        <a href="/index.html" class="nav-logo">
+          <img 
+          src="https://raw.githubusercontent.com/Clinamenic/clinamenic.github.io/main/Clinamenic%20Logo.png"
+          alt="Clinamenic Logo" 
+          width="50"/>
+        </a>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="/about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="/services.html" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="/writing.html" class="nav-link">Writing</a>
+            </li>
+            <li class="nav-item">
+              <a href="/design.html" class="nav-link">Design</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://solosalon.clinamenic.com/" class="nav-link">Newsletter</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </nav>
+    </header>
+
+    <div class="main-body"> 
+
+      <h1 class="heading1">
+        Services
+      </h1>
+
+      <p class="body-p">
+        Clinamenic LLC is available for hourly consultations and for service retainers, and specializes in the design of virtual organizations and the establishment of governance frameworks.
+      </p>
+
+      <h2 class="heading2">
+        Hourly
+      </h1>
+
+      <p class="body-p">
+        Hourly consultations with Clinamenic LLC are billed upon completion, at a rate of $100 per hour, with a month-long invoice period. If you are not satisfied with the knowledge exchange of the consultation, no costs will be incurred. Please use the schedule below to book one or more consultations.
+      </p>
+
+      <div class="spacer50"></div>
+
+      <div style="width:75%;height:75%;overflow:scroll;" id="my-cal-inline" class="cal-embed">
+        </div>
+      <script type="text/javascript">
+      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; typeof namespace === "string" ? (cal.ns[namespace] = api) && p(api, ar) : p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", {origin:"https://cal.com"});
+      Cal("inline", {
+        elementOrSelector:"#my-cal-inline",
+        calLink: "clinamenic/consultation",
+        layout: "month_view"
+        });
+        Cal("ui", {"styles":{"branding":{"brandColor":"#000000"}},"hideEventTypeDetails":false,"layout":"month_view"});
+        </script>
+
+        <div class="spacer50"></div>
+
+      <h2 class="heading2">
+        Retainer
+      </h2>
+
+      <p class="body-p">
+        Clinamenic LLC is also able to provide implementation and maintenance services in the form of a retainer. If you are curious about contracting such services, please book a free 30-minute discovery call using the schedule below.
+      </p>
+
+    </div>
+
+    <footer class="footer">
+      <a href="#" class="Clinamenic-Slide">
+        <img 
+        src="https://raw.githubusercontent.com/Clinamenic/clinamenic.github.io/main/Images/SSC%20slide.gif"
+        width="120" 
+        />
+      </a>
+      <ul class="footer-list">
+        <li class="social-list-title">
+          SOCIAL</a>
+        </li>
+        <li class="social-item">
+          <a href="https://twitter.com/clinamenic" style="color: white;" class="">Twitter</a>
+        </li>
+        <li class="social-item">
+          <a href="https://hey.xyz/u/clinamenic" style="color: white;" class="">Lens</a>
+        </li>
+        <li class="social-item">
+          <a href="https://warpcast.com/clinamenic" style="color: white;" class="">Farcaster</a>
+        </li>
+        <li class="social-item">
+          <a href="https://letterboxd.com/clinamenic/" style="color: white;" class="">Letterboxd</a>
+        </li>
+      </ul>
+      <div class="newsletter-signup">
+        <iframe
+          src="https://solosalon.clinamenic.com/embed?minimal=true"
+          width="480"
+          height="40"
+          style="border: 1px solid #000000; background: black"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
