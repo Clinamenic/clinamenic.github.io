@@ -129,7 +129,7 @@ display: flex;
     text-align: justify;
     font-weight: 300;
     line-height: 1.5;
-    padding: 25px;
+    padding: 15px;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -162,6 +162,13 @@ display: flex;
 
 .body-link{
     font-weight: 500;
+}
+
+.diagram-failsafe{
+    display: flex;
+    height: 75%;
+    width: 75%;
+    margin-left: 12%;
 }
 
 /*The clinamenic cube gif*/
