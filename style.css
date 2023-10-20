@@ -144,7 +144,7 @@ display: flex;
     font-weight: 100;
     line-height: 1.8;
     padding: 25px;
-    margin-left: 20%;
+    margin-left: 5%;
     margin-right: 5%;
 }
 
@@ -253,7 +253,7 @@ display: flex;
     font-weight: 400;
 }
 
-.footer2{
+.support-footer{
     margin-top: 0px;
     border-top: 1px solid white;
     align-items: center;
@@ -342,10 +342,16 @@ display: flex;
         margin-right: 0px;
     }
 
+
+
+}
+
+@media only screen and (max-width: 650px) {
+
     .body-poem{
         margin-left: 0%;
         margin-right: 0%;
-        font-size:x-small;
+        font-size: x-small;
         font-weight: 300;
     }
 
