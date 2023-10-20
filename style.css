@@ -237,20 +237,24 @@ display: flex;
     padding-bottom: 25px;
 }
 
-.social-list-title{
+.footer-list-title{
     font-size: 20px;
     font-weight: 400;
     color: white;
     padding-bottom: 10px;
 }
 
-.social-item{
+.footer-list-item{
     color: white;
     font-weight: 200;
 }
 
-.social-item:hover{
+.footer-list-item:hover{
     font-weight: 400;
+}
+
+.newsletter{
+    display: none;
 }
 
 .support-footer{
@@ -278,6 +282,11 @@ display: flex;
         border-width: 1px solid white;
         padding: 7px;
         margin-left: 80px;
+    }
+
+    .newsletter{
+        display: grid;
+        padding: 25px;
     }
         
 }
