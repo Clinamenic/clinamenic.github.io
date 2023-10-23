@@ -229,7 +229,6 @@ display: flex;
 
 .footer{
     display: flex;
-    margin-top: 50px;
     border-top: 1px solid white;
     align-items: normal;
     overflow: scroll;
