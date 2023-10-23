@@ -116,7 +116,7 @@ display: flex;
 
 /*Cellular Automata BW: https://raw.githubusercontent.com/Clinamenic/clinamenic.github.io/main/CA%20BW%20square%201.gif */
 .main-body-bg{
-    background-image: url(https://i.ibb.co/RQjzNGk/blackskyv2.png);
+    background-image: url(https://i.ibb.co/7JkGzDv/blackskyv3.png);
     animation: background-drop 3s linear infinite;
 }
 
@@ -286,18 +286,8 @@ display: flex;
     padding-bottom: 25px;
 }
 
-
-/* TEST ELEMENTS */
-
-
-
     
-@keyframes background-drop {
-100% { 
-    background-position-y: 1406px; 
-    background-position-x: -600px;
-} /* set this to the width of the image */
-}
+
 
 
 
@@ -305,10 +295,10 @@ display: flex;
 
 .image-marquee{
     height: 170px; /* Any size you want */ 
-    background-image:url(https://i.ibb.co/WkmnqFb/Clinamenic-Client-Slide-Small-Border-Total.png);
+    background-image:url(https://i.ibb.co/QXDRJKp/Client-Marquee-Small-Trans.png);
     animation: image-slide-bg 20s linear infinite;
-    margin-left: -25%;
-    margin-right: -25%;
+    margin-left: -17%;
+    margin-right: -17%;
 }
 
 @keyframes image-slide-bg {
@@ -317,6 +307,12 @@ display: flex;
     }        
 }
 
+@keyframes background-drop {
+    100% { 
+        background-position-y: 1406px; 
+        background-position-x: 0px;
+    } 
+}
 
 
 
