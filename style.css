@@ -24,6 +24,7 @@ a {
     text-decoration: none;
 }
 
+
 .header{
     position: fixed;
     background-color: black;
@@ -39,7 +40,7 @@ a {
 
 }
 
-/*The horizontal menu in the header*/
+/* The horizontal menu in the header */
 .navbar {
     display: flex;
     position: relative;
@@ -149,11 +150,10 @@ display: flex;
     font-weight: 600;
 }
 
-.diagram-failsafe{
+.diagram{
     display: flex;
-    height: 75%;
-    width: 75%;
-    margin-left: 12%;
+    height: 100%;
+    width: 100%;
 }
 
 /*The clinamenic cube gif*/
@@ -281,6 +281,32 @@ display: flex;
     padding-left: 25px;
     padding-bottom: 25px;
 }
+
+
+/* TEST ELEMENTS */
+
+
+
+.image-marquee
+{
+    height: 170px; /* Any size you want */ 
+    background-image:url(https://i.ibb.co/WkmnqFb/Clinamenic-Client-Slide-Small-Border-Total.png);
+    animation: image-slide-bg 20s linear infinite;
+    margin-left: -25%;
+    margin-right: -25%;
+}
+
+@keyframes image-slide-bg {
+    100% {
+        background-position-x: -1100px; /* width of the image */
+    }        
+}
+
+
+
+
+
+
 
 
 @media only screen and (min-width: 920px) {
