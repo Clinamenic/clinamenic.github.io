@@ -295,7 +295,7 @@ display: flex;
 .image-marquee{
     height: 170px; /* Any size you want */ 
     background-image:url(https://i.ibb.co/QXDRJKp/Client-Marquee-Small-Trans.png);
-    animation: image-slide-bg 20s linear infinite;
+    animation: image-slide-bg 30s linear infinite;
     margin-left: -17%;
     margin-right: -17%;
 }

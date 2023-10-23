@@ -1,2 +1,7 @@
 # Map SPA routes to the main index HTML file.
 /* /index.html 200
+/about /about.html
+/design /design.html
+/writing /writing.html
+/services /services.html
+/contact /contact.html
