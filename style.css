@@ -185,6 +185,7 @@ display: flex;
 .main-body-bg{
     background-image: url(https://i.ibb.co/7JkGzDv/blackskyv3.png);
     animation: background-drop 3s linear infinite;
+    overflow-x: hidden
 }
 
 .main-body{
@@ -249,6 +250,10 @@ display: flex;
     height: 50px;
 }
 
+.spacer100{
+    height: 100px;
+}
+
 .writing-title{
     font-weight: 400;
 }
@@ -272,7 +277,7 @@ display: flex;
     padding-bottom: 10px;
 }
 
-.heading1-sub{
+.heading-sub{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -304,6 +309,7 @@ display: flex;
 .Clinamenic-Slide{
     padding: 25px;
     cursor: default;
+    
 }
 
 .footer-list{
@@ -358,19 +364,34 @@ display: flex;
 
 
 
-
-.image-marquee{
-    height: 170px; /* Any size you want */ 
-    background-image:url(https://i.ibb.co/QXDRJKp/Client-Marquee-Small-Trans.png);
-    animation: image-slide-bg 30s linear infinite;
-    margin-left: -17%;
-    margin-right: -17%;
+.marquee-image{
+    animation: slide-image 30s linear infinite;
+    overflow-x: hidden
 }
+
+.marquee-text{
+    animation: slide-text 30s linear infinite;
+    overflow-x: hidden;
+    margin-left: -10%;
+}
+
+
+
 
 @keyframes image-slide-bg {
     100% {
         background-position-x: -1100px; /* width of the image */
     }        
+}
+
+@keyframes slide-image {
+    0%{ transform:translateX(120%) }
+    100%{ transform:translateX(-80%) }
+}
+
+@keyframes slide-text {
+    0%{ transform:translateX(160%) }
+    100%{ transform:translateX(-100%) }
 }
 
 @keyframes background-drop {
@@ -380,7 +401,20 @@ display: flex;
     } 
 }
 
+@keyframes rotate {
+    0% {rotate: 0deg;}
+    25% {rotate: 90deg;}
+    50% {rotate: 180deg;}
+    75% {rotate: 270deg;}
+    100% {rotate: 360deg;}
+}
 
+/* Template for rotating animation: 
+animation-name: rotate;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+*/
 
 
 
