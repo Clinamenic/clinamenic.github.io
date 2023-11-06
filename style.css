@@ -69,8 +69,6 @@
 
 
 * {
-    margin: 0px;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -80,60 +78,57 @@ html {
     font-weight: 200;
     background-color: black;
     color: white;
-    margin: 0px;
 }
 
+/* "list-style: none" prevents bullet points */
 li {
     list-style: none;
 }
 
 a {
+    color: white;
     text-decoration: none;
+    font-weight: 200;
 }
-
+a:hover {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
 
 .header{
     position: fixed;
     background-color: black;
-    border-radius: 0px;
     border: 0px solid white;
-    border-bottom-color: white;
     border-bottom-width: 1px;
     padding: 20px;
-    margin: 0px;
     position: relative;
     color: white;
     z-index: 10000;
 
 }
 
-/* The horizontal menu in the header */
-.navbar {
+.nav-menu {
     display: flex;
-    position: relative;
-    overflow: hidden;
-    align-items: center;
-    padding: 0px;
-
 }
+.nav-item {
+    margin-left: 35px;
+}
+
 
 .hamburger {
     display: none;
     margin-right: 20px;
 }
-
 .hamburger .bar:nth-child(1) {
     background-color: white;
 }
-
 .hamburger .bar:nth-child(2) {
     background-color: white;
 }
-
 .hamburger .bar:nth-child(3) {
     background-color: white;
 }
-
 /*The individual horizontal bars of the hamburger button*/
 .bar {
     display: block;
@@ -145,41 +140,14 @@ a {
     background-color: #101010;
 }
 
-.nav-menu {
-display: flex;
-}
-
-.nav-item {
-    margin-left: 20px;
-}
-
-.nav-link{
-    font-size: 100%;
-    font-weight: 200;
-    color: white;
-    padding-left: 15px;
-}
-
-.nav-link:hover{
-    color: white;
-    font-weight: 400;
-}
-
-.nav-logo {
-    font-size: 100%;
-    font-weight: 500;
-    color: white;
+/* The horizontal menu in the header */
+.navbar {
+    display: flex;
+    position: relative;
+    overflow: hidden;
     align-items: center;
-    margin-right: 20px;
 }
 
-.newsletter-signup{
-    display: none;
-    border-width: 1px solid white;
-    padding: 10px;
-    margin-top: 55px;
-    margin-left: 30px;
-}
 
 /*Cellular Automata BW: https://raw.githubusercontent.com/Clinamenic/clinamenic.github.io/main/CA%20BW%20square%201.gif */
 .main-body-bg{
@@ -187,7 +155,6 @@ display: flex;
     animation: background-drop 3s linear infinite;
     overflow-x: hidden
 }
-
 .main-body{
     color: white;
     margin-left: 8%;
@@ -195,38 +162,31 @@ display: flex;
 
 }
 
+
 .body-p{
     text-align: justify;
     font-weight: 200;
     line-height: 1.5;
 }
-
 .body-poem{
     text-align: left;
     font-size: 20;
     font-weight: 100;
     line-height: 1.8;
 }
-
 .body-list{
     font-weight: 300;
     line-height: 1.5;
     padding: 25px;
 }
-
 .body-link{
     font-weight: 400;
 }
-
 .body-link:hover{
     font-weight: 600;
 }
 
-.diagram{
-    display: flex;
-    height: 100%;
-    width: 100%;
-}
+
 
 /*The clinamenic cube gif*/
 .clinamenic-cube{
@@ -237,21 +197,22 @@ display: flex;
     padding-top: 0px;
     padding-bottom: 10px;
 }
-
+.diagram{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
 
 
 .spacer10{
     height: 10px;
 }
-
 .spacer25{
     height: 25px;
 }
-
 .spacer50{
     height: 50px;
 }
-
 .spacer100{
     height: 100px;
 }
@@ -284,7 +245,6 @@ display: flex;
     font-weight: 400;
     padding-bottom: 10px;
 }
-
 .heading-sub{
     display: flex;
     justify-content: center;
@@ -296,7 +256,6 @@ display: flex;
     padding-bottom: 30px;
 
 }
-
 .heading2{
     display: flex;
     justify-content: center;
@@ -307,67 +266,53 @@ display: flex;
     padding-bottom: 10px;
 }
 
+
 .footer{
     display: flex;
     border-top: 1px solid white;
     align-items: normal;
     overflow: scroll;
 }
-
 .Clinamenic-Slide{
     padding: 25px;
     cursor: default;
-    
 }
-
 .footer-list{
-    font-size: 16px;
-    color: white;
-    padding-left: 25px;
-    padding-top: 25px;
-    padding-right: 25px;
-    padding-bottom: 25px;
+    padding: 10px;
+    padding-left: 20px;
 }
-
 .footer-list-title{
     font-size: 20px;
     font-weight: 400;
-    color: white;
     padding-bottom: 10px;
 }
-
 .footer-list-item{
-    color: white;
     font-weight: 200;
 }
-
 .footer-list-item:hover{
     font-weight: 400;
 }
-
 .newsletter{
-    display: none;
+    display: grid;
+    padding: 10px;
+    padding-left: 20px;
 }
+
 
 .support-footer{
     margin-top: 0px;
     border-top: 1px solid white;
     align-items: center;
 }
-
 .support-note{
     font-size: 12;
     padding: 25px;
 }
-
 .support-list{
     display: flex;
     padding-left: 25px;
     padding-bottom: 25px;
 }
-
-
-
 
 
 .gallery {
@@ -376,31 +321,21 @@ display: flex;
     grid-template-rows: repeat(infinite, 48%);
     grid-gap: 2%;
 }
-
-.gallery__img {
+.gallery-img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    object-fit:cover;
-}
-
-
-
-
-
-
-    
+    object-fit: cover;
+}   
 
 
 .marquee-image{
     animation: slide-image 30s linear infinite;
     overflow-x: hidden
 }
-
 .marquee-image:hover{
     animation-play-state: paused;
 }
-
 .marquee-text{
     animation: slide-text 30s linear infinite;
     overflow-x: hidden;
@@ -410,29 +345,20 @@ display: flex;
 
 
 
-@keyframes image-slide-bg {
-    100% {
-        background-position-x: -1100px; /* width of the image */
-    }        
-}
-
 @keyframes slide-image {
     0%{ transform:translateX(120%) }
     100%{ transform:translateX(-80%) }
 }
-
 @keyframes slide-text {
     0%{ transform:translateX(160%) }
     100%{ transform:translateX(-100%) }
 }
-
 @keyframes background-drop {
     100% { 
         background-position-y: 1406px; 
         background-position-x: 0px;
     } 
 }
-
 @keyframes rotate {
     0% {rotate: 0deg;}
     25% {rotate: 90deg;}
@@ -459,17 +385,10 @@ animation-timing-function: linear;
 
 
 
-@media only screen and (min-width: 920px) {
- 
-    .newsletter-signup {
-        display: flex;
-        border-width: 1px solid white;
-        padding: 7px;
-        margin-left: 80px;
-    }
+@media only screen and (max-width: 920px) {
 
     .newsletter{
-        display: grid;
+        display: none;
         padding: 25px;
     }
         
@@ -490,15 +409,14 @@ animation-timing-function: linear;
         transition: 0.3s;
 
     }
-
     .nav-menu.active {
         left: 0;
         padding: 10px;
     }
-
     .nav-item {
         margin: 10px;
     }
+
 
     .hamburger {
         display: block;
@@ -508,25 +426,19 @@ animation-timing-function: linear;
         padding-left: 25px;
         align-content: center;
     }
-
     .hamburger.active .bar:nth-child(2) {
         background-color: white;
         opacity: 0;
     }
-
     .hamburger.active .bar:nth-child(1) {
         background-color: white;
         transform: translateY(8px) rotate(45deg);
     }
-
     .hamburger.active .bar:nth-child(3) {
         background-color: white;
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .newsletter-signup {
-        display: none;
-    }
 
     .body-p{
         text-align: justify;
@@ -534,13 +446,6 @@ animation-timing-function: linear;
         margin-left: 0px;
         margin-right: 0px;
     }
-
-
-
-}
-
-@media only screen and (max-width: 700px) {
-
     .body-poem{
         margin-left: 0%;
         margin-right: 0%;
@@ -549,6 +454,8 @@ animation-timing-function: linear;
     }
 
 }
+
+
 
 @media only screen and (max-width: 480px) {
 
