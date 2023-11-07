@@ -84,7 +84,22 @@ html {
 li {
     list-style: none;
 }
-
+p{
+    padding: 0px;
+    margin: 0px;
+}
+h1{
+    padding: 0px;
+    margin: 0px;
+}
+h2{
+    padding: 0px;
+    margin: 0px;
+}
+h3{
+    padding: 0px;
+    margin: 0px;
+}
 a {
     color: white;
     text-decoration: none;
@@ -107,7 +122,6 @@ a:hover {
     z-index: 10000;
 
 }
-
 .nav-menu {
     display: flex;
 }
@@ -118,7 +132,7 @@ a:hover {
 
 .hamburger {
     display: none;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 .hamburger .bar:nth-child(1) {
     background-color: white;
@@ -192,8 +206,6 @@ a:hover {
 .clinamenic-cube{
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
     padding-top: 0px;
     padding-bottom: 10px;
 }
@@ -218,15 +230,12 @@ a:hover {
 }
 
 
-
 .writing-title{
     font-weight: 400;
 }
-
 .writing-title:hover{
     font-weight: 600;
 }
-
 
 
 .cal-embed{
@@ -236,34 +245,21 @@ a:hover {
 }
 
 
-
 .heading1{
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
     font-weight: 400;
-    padding-bottom: 10px;
 }
 .heading-sub{
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-weight: 200;
     font-style: italic;
     font-size: 20px;
-    padding-bottom: 30px;
-
 }
 .heading2{
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
     font-weight: 400;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 
@@ -279,7 +275,6 @@ a:hover {
 }
 .footer-list{
     padding: 10px;
-    padding-left: 20px;
 }
 .footer-list-title{
     font-size: 20px;
@@ -330,26 +325,25 @@ a:hover {
 
 
 .marquee-image{
-    animation: slide-image 30s linear infinite;
-    overflow-x: hidden
+    animation: scroll-image 30s linear infinite;
+    overflow-x: hidden; 
 }
 .marquee-image:hover{
     animation-play-state: paused;
 }
 .marquee-text{
-    animation: slide-text 30s linear infinite;
+    animation: scroll-text 30s linear infinite;
     overflow-x: hidden;
     margin-left: -10%;
 }
 
 
 
-
-@keyframes slide-image {
+@keyframes scroll-image {
     0%{ transform:translateX(120%) }
     100%{ transform:translateX(-80%) }
 }
-@keyframes slide-text {
+@keyframes scroll-text {
     0%{ transform:translateX(160%) }
     100%{ transform:translateX(-100%) }
 }
@@ -367,34 +361,11 @@ a:hover {
     100% {rotate: 360deg;}
 }
 
-/* Template for rotating animation: 
-animation-name: rotate;
-animation-duration: 5s;
-animation-iteration-count: infinite;
-animation-timing-function: linear;
-*/
 
 
 
 
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 920px) {
-
-    .newsletter{
-        display: none;
-        padding: 25px;
-    }
-        
-}
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 830px) {
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -453,6 +424,10 @@ animation-timing-function: linear;
         font-weight: 300;
     }
 
+    .newsletter{
+        display: none;
+    }
+
 }
 
 
@@ -481,3 +456,21 @@ animation-timing-function: linear;
 
 }
 
+
+
+
+/*  NOTES
+
+
+Template for rotating animation: 
+
+animation-name: rotate;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+
+
+
+
+
+*/
