@@ -326,6 +326,8 @@ a:hover {
 
 .marquee-image{
     animation: scroll-image 30s linear infinite;
+    height: 170px;
+    width: 600px;
     overflow-x: hidden; 
 }
 .marquee-image:hover{
@@ -334,17 +336,18 @@ a:hover {
 .marquee-text{
     animation: scroll-text 30s linear infinite;
     overflow-x: hidden;
+    height: 20px;
     margin-left: -10%;
 }
 
 
 
 @keyframes scroll-image {
-    0%{ transform:translateX(120%) }
-    100%{ transform:translateX(-80%) }
+    0%{ transform:translateX(100vw) }
+    100%{ transform:translateX(-100%) }
 }
 @keyframes scroll-text {
-    0%{ transform:translateX(160%) }
+    0%{ transform:translateX(100%) }
     100%{ transform:translateX(-100%) }
 }
 @keyframes background-drop {
@@ -352,13 +355,6 @@ a:hover {
         background-position-y: 1406px; 
         background-position-x: 0px;
     } 
-}
-@keyframes rotate {
-    0% {rotate: 0deg;}
-    25% {rotate: 90deg;}
-    50% {rotate: 180deg;}
-    75% {rotate: 270deg;}
-    100% {rotate: 360deg;}
 }
 
 
