@@ -209,6 +209,12 @@ a:hover {
     padding-top: 0px;
     padding-bottom: 10px;
 }
+.clinamenic-rotate-bg{
+    background-image: url(https://i.ibb.co/JxTFtr5/Clinamenic-Wrap-Small-Logo.png);
+}
+.clinamenic-rotate-fg{
+    animation: rotate-image 10s linear infinite;
+}
 .diagram{
     display: flex;
     height: 100%;
@@ -329,6 +335,7 @@ a:hover {
     height: 170px;
     width: 600px;
     overflow-x: hidden; 
+    white-space: nowrap;
 }
 .marquee-image:hover{
     animation-play-state: paused;
@@ -339,6 +346,10 @@ a:hover {
     height: 20px;
     margin-left: -10%;
 }
+
+
+
+
 
 
 
@@ -355,6 +366,13 @@ a:hover {
         background-position-y: 1406px; 
         background-position-x: 0px;
     } 
+}
+@keyframes rotate-image {
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(-360deg); 
+    }
 }
 
 
@@ -470,3 +488,36 @@ animation-timing-function: linear;
 
 
 */
+
+
+
+
+
+.scroll-parent {
+    position: relative;
+    width: 100vw;
+    height: 20rem;
+    overflow-x: hidden;
+    white-space: nowrap;
+  }
+  
+  .scroll-element-primary {
+    height: inherit;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    animation: scroll-primary 10s linear infinite;
+  }
+
+  
+  @keyframes scroll-primary {
+    from {
+      left: 100%;
+    }
+    to {
+      left: -100%;
+    }
+  }
+  
+
