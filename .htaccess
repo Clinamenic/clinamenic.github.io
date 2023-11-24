@@ -1,9 +1,8 @@
-RewriteEngine On
-RewriteBase /
+RewriteEngine on
 
-# Remove .html extension
-RewriteRule ^([a-zA-Z0-9_]+)$ $1.html
 
-# Redirect non-www to www
-RewriteCond %{HTTP_HOST} !^www\.clinamenic\.com$ [NC]
-RewriteRule (.*) http://www.clinamenic.com/$1 [L,R=301]
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
