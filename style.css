@@ -68,6 +68,13 @@
 
 
 
+:root {
+    --column2: calc((100% - 25px) / 2);
+    --column3: calc((100% - 50px) / 3);
+    --column4: calc((100% - 75px) / 4);
+  }
+
+
 
 * {
     box-sizing: border-box;
@@ -79,6 +86,7 @@ html {
     font-weight: 200;
     background-color: black;
     color: white;
+    scroll-behavior: smooth;
 }
 
 /* "list-style: none" prevents bullet points */
@@ -117,7 +125,7 @@ a:hover {
     background-color: black;
     border: 0px solid white;
     border-bottom-width: 1px;
-    padding: 15px;
+    padding: 5px;
     padding-left: 25px;
     position: relative;
     color: white;
@@ -128,7 +136,31 @@ a:hover {
     display: flex;
 }
 .nav-item {
-    margin-left: 35px;
+    margin: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+}
+.nav-item:hover {
+    margin: 4px;
+    border: 1px solid white;
+}
+.nav-item-live{
+    margin: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px; 
+    color: black;
+    font-weight: 400;
+    background-color: white
+}
+.nav-link{
+    font-weight: 200;
+}
+.nav-link:hover{
+    font-weight: 200;
 }
 
 
@@ -244,6 +276,8 @@ a:hover {
 
 .writing-title{
     font-weight: 400;
+    font-size: medium;
+    height: 80px;
 }
 .writing-title:hover{
     font-weight: 600;
@@ -324,6 +358,7 @@ a:hover {
 }
 
 
+/* original column width 100%*/
 .gallery1 {
     display: grid;
     width: 100%;
@@ -332,32 +367,35 @@ a:hover {
     justify-content: center;
     grid-row-gap: 25px;
 }
+/* original column width 48.5% colum gap 3%*/
 .gallery2 {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(2, 48.5%);
+    grid-template-columns: repeat(2, var(--column2));
     grid-template-rows: repeat(infinite, 49%);
     justify-content: center;
     grid-row-gap: 25px;
-    grid-column-gap: 3%;
+    grid-column-gap: 25px;
 }
+/* original column width 32% column gap 2%*/
 .gallery3 {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(3, 32%);
+    grid-template-columns: repeat(3, var(--column3));
     grid-template-rows: repeat(infinite, 48%);
     justify-content: center;
     grid-row-gap: 25px;
-    grid-column-gap: 2%;
+    grid-column-gap: 25px;
 }
+/* original column width 23.5%*/
 .gallery4 {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(4, 23.5%);
+    grid-template-columns: repeat(4, var(--column4));
     grid-template-rows: repeat(infinite, 48%);
     justify-content: center;
     grid-row-gap: 25px;
-    grid-column-gap: 2%;
+    grid-column-gap: 25px;
 }
 .gallery-img {
     width: 100%;
@@ -384,7 +422,7 @@ a:hover {
     border-radius: 10px;
     background-color: black;
     padding: 15px;
-    margin: 10px;
+    margin: 5px;
     width: 140px;
     text-align: center;
 }
@@ -447,6 +485,10 @@ a:hover {
 
 /* Slightly larger than standard tablet recs (tablet ~ min-width: 768px */
 @media only screen and (max-width: 830px) {
+    .header{
+        padding-top: 14px;
+        padding-bottom: 13px;
+    }
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -464,9 +506,6 @@ a:hover {
     .nav-menu.active {
         left: 0;
         padding: 10px;
-    }
-    .nav-item {
-        margin: 10px;
     }
 
 
@@ -505,6 +544,10 @@ a:hover {
         font-weight: 300;
     }
 
+    .writing-title{
+        height: 80px;
+    }
+
 
     .newsletter{
         display: none;
@@ -515,22 +558,22 @@ a:hover {
         display: grid;
     }
 
-    .gallery3 {
-        display: grid;
-        grid-template-columns: repeat(2, 47.5%);
-        grid-template-rows: repeat(infinite, 49%);
-        grid-row-gap: 25px;
-        grid-column-gap: 5%;
-    }
     .gallery2{
         grid-template-columns: repeat(1, 100%);
         grid-row-gap: 25px;
     }
+    .gallery3 {
+        display: grid;
+        grid-template-columns: repeat(2, var(--column2));
+        grid-template-rows: repeat(infinite, 49%);
+        grid-row-gap: 25px;
+        grid-column-gap: 25px;
+    }
     .gallery4{
-        grid-template-columns: repeat(3, 32%);
+        grid-template-columns: repeat(3, var(--column3));
         grid-template-rows: repeat(infinite, 48%);
         grid-row-gap: 25px;
-        grid-column-gap: 2%;
+        grid-column-gap: 25px;
     }
 
 
