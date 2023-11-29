@@ -1,3 +1,5 @@
+
+
 window.addEventListener("scroll", function () {
     var scrollPosition = window.pageYOffset;
 
@@ -56,3 +58,5 @@ function closeMenu() {
         }).find('.skip-link').append('<span>'+$('#menu .active').text()+'</span>');
     });
 })(jQuery);
+
+

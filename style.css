@@ -65,6 +65,26 @@
 /* Roboto Mono Family */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+@font-face {
+    font-family: "SundaePlush";
+    src: url(https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmYKUF8KMruNmTWq4juuQde8o6UzFEV63SN3ZhiknFtKyv);
+    src: url(https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmYKUF8KMruNmTWq4juuQde8o6UzFEV63SN3ZhiknFtKyv) format("opentype");
+    font-weight: 100;
+}
+@font-face {
+    font-family: "Redactor";
+    src: url(https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmSVB3Te5fA8Bwr4f9XkyqCSPkijAKdZAWV7in1g2Pt6Qa);
+    src: url(https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmSVB3Te5fA8Bwr4f9XkyqCSPkijAKdZAWV7in1g2Pt6Qa) format("opentype");
+    font-weight: 100;
+}
+@font-face {
+    font-family: "DoctorMingo";
+    src: url(https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmaesBNULjTtfcb1NcZAznxJy76QWdLc7tqBb93U88dDTd);
+    src: url(https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmaesBNULjTtfcb1NcZAznxJy76QWdLc7tqBb93U88dDTd) format("opentype");
+    font-weight: 100;
+}
+
+
 
 
 
@@ -87,6 +107,10 @@ html {
     background-color: black;
     color: white;
     scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
 }
 
 /* "list-style: none" prevents bullet points */
@@ -122,14 +146,14 @@ a:hover {
 
 .header{
     position: fixed;
+    height: 80px;
     background-color: black;
-    border: 0px solid white;
-    border-bottom-width: 1px;
+    border-bottom: 1px solid white;
     padding: 5px;
     padding-left: 25px;
     position: relative;
     color: white;
-    z-index: 1000;
+    z-index: 2000;
 
 }
 .nav-menu {
@@ -165,14 +189,12 @@ a:hover {
 }
 
 .sub-header{
-    padding-top: 8px;
-    z-index: 1000;
+    padding-top: 5px;
+    z-index: 1900;
 }
 .sub-nav-menu {
     display: flex;
-    margin: 0px;
     justify-content: center;
-    z-index: 9000;
 }
 
 
@@ -428,7 +450,7 @@ a:hover {
 .gallery-img {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
     object-fit: cover;
 }
 .text-box{
@@ -460,12 +482,21 @@ a:hover {
 }
 
 
+.font-title{
+    padding: 10px; 
+    padding-left: 20px; 
+    border-bottom: 1px dashed white;  
+    font-size: 60px;
+    overflow: hidden;
+}
+
+
 .marquee-row{
     display: grid;
     width: 100%;
     grid-template-columns: repeat(500, 180px);
     grid-row-gap: 0px;
-    animation: scroll-row 20s linear infinite;
+    animation: scroll-row 25s linear infinite;
 }
 .marquee-row:hover{
     animation-play-state: paused;
@@ -516,6 +547,7 @@ a:hover {
     .header{
         padding-top: 14px;
         padding-bottom: 13px;
+        height: 80px;
     }
     .nav-menu {
         position: fixed;
@@ -556,6 +588,10 @@ a:hover {
     .hamburger.active .bar:nth-child(3) {
         background-color: white;
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .sub-header{
+        display: none;
     }
 
 
