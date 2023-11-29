@@ -19,7 +19,7 @@ window.addEventListener("scroll", function () {
   // If the user has scrolled more than 0 pixels, add a fixed positioning to the sub-header
   if (scrollPosition > 0) {
     document.querySelector(".sub-header").style.position = "sticky";
-    document.querySelector(".sub-header").style.top = "82px";
+    document.querySelector(".sub-header").style.top = "90px";
   } else {
     // If the user has not scrolled more than 0 pixels, revert to the default positioning
     document.querySelector(".sub-header").style.position = "sticky";

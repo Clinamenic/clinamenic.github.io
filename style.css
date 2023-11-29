@@ -189,7 +189,7 @@ a:hover {
 }
 
 .sub-header{
-    padding-top: 5px;
+    padding-top: 0px;
     z-index: 1900;
 }
 .sub-nav-menu {
@@ -199,7 +199,8 @@ a:hover {
 
 
 .sub-nav-item {
-    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
@@ -501,6 +502,9 @@ a:hover {
 .marquee-row:hover{
     animation-play-state: paused;
 }
+.marquee-img{
+    animation: scroll-image 25s linear infinite;
+}
 .marquee-text{
     animation: scroll-text 30s linear infinite;
     overflow-x: hidden;
@@ -516,6 +520,10 @@ a:hover {
 @keyframes scroll-row {
     0%{ transform:translateX(110%) }
     100%{ transform:translateX(-1000px) }
+}
+@keyframes scroll-image {
+    0%{ transform:translateX(110%) }
+    100%{ transform:translateX(-200px) }
 }
 @keyframes scroll-text {
     0%{ transform:translateX(100%) }
