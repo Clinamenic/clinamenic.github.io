@@ -92,6 +92,7 @@
     --column2: calc((100% - 25px) / 2);
     --column3: calc((100% - 50px) / 3);
     --column4: calc((100% - 75px) / 4);
+    --sphere: calc(100% - 10px);
   }
 
 
@@ -494,12 +495,12 @@ a:hover {
 .marquee-row{
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(500, 180px);
+    grid-template-columns: repeat(500, 185px);
     grid-row-gap: 0px;
     animation: scroll-row 25s linear infinite;
 }
 .marquee-row:hover{
-    animation-play-state: paused;
+    animation-play-state: paused ;
 }
 .marquee-img{
     animation: scroll-image 25s linear infinite;
@@ -513,6 +514,15 @@ a:hover {
 
 
 
+.bouncing-sphere{
+    width: var(--sphere);
+    height: var(--sphere);
+    border: 1px solid white;
+    border-radius: var(--sphere);
+    display: flex;
+    justify-content: center;
+    animation: bounce-sphere 4s linear infinite;
+}
 
 
 
@@ -545,6 +555,17 @@ a:hover {
         transform: rotate(-360deg); 
     }
 }
+@keyframes bounce-sphere {
+    0%{ transform:translateY(-1px) }
+    50%{ transform:translateY(11px) }
+    100%{ transform:translateY(-1px) }
+}
+@keyframes bounce-backup {
+    0%{ transform:translateY(0%) }
+    50%{ transform:translateY(17%) }
+    100%{ transform:translateY(0%) }
+}
+
 
 
 
