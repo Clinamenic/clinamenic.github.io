@@ -147,11 +147,12 @@ a:hover {
 
 .header{
     position: fixed;
-    height: 80px;
+    height: 60px;
     background-color: black;
     border-bottom: 1px solid white;
-    padding: 5px;
+    padding: 0px;
     padding-left: 25px;
+    margin-top: 0px;
     position: relative;
     color: white;
     z-index: 2000;
@@ -159,6 +160,7 @@ a:hover {
 }
 .nav-menu {
     display: flex;
+    margin-top: 9px;
 }
 .nav-item {
     margin: 5px;
@@ -166,6 +168,9 @@ a:hover {
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 15px;
+    background-color: black;
+    border: 0px solid white;
+
 }
 .nav-item:hover {
     margin: 4px;
@@ -176,45 +181,22 @@ a:hover {
     border: 2px solid white;
 }
 .nav-item-live{
-    margin: 5px;
+    margin: 4px;
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 15px; 
     color: black;
     font-weight: 400;
+    border: 1px solid black;
     background-color: white
 }
 .nav-link:hover{
     font-weight: 200;
 }
-
-.sub-header{
-    padding-top: 0px;
-    z-index: 1900;
+.nav-logo{
+    padding-top: 9px;
 }
-.sub-nav-menu {
-    display: flex;
-    justify-content: center;
-}
-
-
-.sub-nav-item {
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 15px;
-    border: 1px solid black;
-    color: black;
-    font-weight: 400;
-    background-color: white;
-    z-index: 20000;
-}
-
-
-
 
 .hamburger {
     display: none;
@@ -245,7 +227,29 @@ a:hover {
     display: flex;
     position: relative;
     overflow: hidden;
-    align-items: center;
+}
+
+
+.sub-header{
+    padding-top: 0px;
+    z-index: 2100;
+}
+.sub-nav-menu {
+    display: flex;
+    justify-content: center;
+}
+.sub-nav-item {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+    color: black;
+    font-weight: 400;
+    background-color: white;
+    z-index: 20000;
 }
 
 
@@ -255,12 +259,24 @@ a:hover {
     background-image: url(https://i.ibb.co/7JkGzDv/blackskyv3.png);
     animation: background-drop 3s linear infinite;
     overflow-x: hidden
+    align-items: flex-start;
 }
 .main-body{
     color: white;
-    margin-left: 8%;
-    margin-right: 8%;
-
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.side-body-right{
+    background-color: red;
+    height: 500px;
+    width: 10%;
+    float: right;
+    overflow-x: hidden;
+    justify-content: center;
+    text-align: center;
+    top: 0px;
+    position: sticky;
+    position: -webkit-sticky;
 }
 
 
@@ -566,6 +582,13 @@ a:hover {
     from { 
         transform: rotate(0deg); 
     } to { 
+        transform: rotate(360deg); 
+    }
+}
+@keyframes rotate-image-counter {
+    from { 
+        transform: rotate(0deg); 
+    } to { 
         transform: rotate(-360deg); 
     }
 }
@@ -582,9 +605,12 @@ a:hover {
 /* Slightly larger than standard tablet recs (tablet ~ min-width: 768px */
 @media only screen and (max-width: 830px) {
     .header{
-        padding-top: 14px;
+        padding-top: 9px;
         padding-bottom: 13px;
-        height: 80px;
+        height: 60px;
+    }
+    .nav-logo{
+        padding-top: 0px;
     }
     .nav-menu {
         position: fixed;
