@@ -93,6 +93,9 @@
     --column3: calc((100% - 50px) / 3);
     --column4: calc((100% - 75px) / 4);
     --sphere: calc(100% - 10%);
+    --right30: calc(100% + 30px);
+    --left500: calc(-100% - 500px);
+    --left1000: calc(-100% - 1000px);
   }
 
 
@@ -323,6 +326,9 @@ a:hover {
     height: 100%;
     width: 100%;
 }
+.img-invert{
+    filter: invert(100%);
+}
 
 
 .spacer5{
@@ -409,6 +415,7 @@ a:hover {
     font-weight: 400;
 }
 .newsletter{
+    bottom: 0;
     display: grid;
     padding: 10px;
     padding-left: 20px;
@@ -479,7 +486,7 @@ a:hover {
 .text-box{
     position: relative;
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 25px;
     overflow-x: hidden;
 }
@@ -493,7 +500,8 @@ a:hover {
 .client-tile{
     border: 1px solid white;
     border-radius: 10px;
-    background-color: black;
+    background-color: white;
+    color: black;
     padding: 15px;
     margin: 5px;
     width: 170px;
@@ -502,6 +510,13 @@ a:hover {
 .client-tile:hover{
     border: 3px solid white;
     padding: 13px;
+}
+
+.tag{
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 5px;
 }
 
 
@@ -527,10 +542,11 @@ a:hover {
     animation: scroll-image 25s linear infinite;
 }
 .marquee-text{
-    animation: scroll-text 30s linear infinite;
-    overflow-x: hidden;
-    height: 20px;
+    animation: scroll-text-500 20s linear infinite;
+    overflow-x: ;
+    flex-wrap: nowrap;
     margin-left: -10%;
+    display: flex;
 }
 
 
@@ -564,9 +580,13 @@ a:hover {
     0%{ transform:translateX(110%) }
     100%{ transform:translateX(-200px) }
 }
-@keyframes scroll-text {
-    0%{ transform:translateX(100%) }
-    100%{ transform:translateX(-100%) }
+@keyframes scroll-text-500 {
+    0%{ transform:translateX(var(--right30)) }
+    100%{ transform:translateX(var(--left500)) }
+}
+@keyframes scroll-text-1000 {
+    0%{ transform:translateX(var(--right30)) }
+    100%{ transform:translateX(var(--left1000)) }
 }
 @keyframes scroll-title {
     0%{ transform:translateX(0%) }

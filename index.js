@@ -33,7 +33,7 @@ window.addEventListener("scroll", function () {
   // If the user has scrolled more than 100 pixels, add a fixed positioning to the navbar
   if (scrollPosition > 0) {
     document.querySelector(".side-body-right").style.position = "sticky";
-    document.querySelector(".side-body-right").style.top = "80px";
+    document.querySelector(".side-body-right").style.top = "60px";
   } else {
     document.querySelector(".side-body-right").style.position = "sticky";
     document.querySelector(".side-body-right").style.top = "0";
