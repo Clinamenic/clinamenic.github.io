@@ -280,8 +280,7 @@ a:hover {
 
 /*Cellular Automata BW: https://raw.githubusercontent.com/Clinamenic/clinamenic.github.io/main/CA%20BW%20square%201.gif */
 .main-body-bg{
-    background-image: url(https://i.ibb.co/nwc8m8L/Star-BG-Draft.png);
-    animation: background-drop 4s linear infinite;
+
     overflow-x: hidden
     align-items: flex-start;
 }
@@ -291,7 +290,7 @@ a:hover {
     margin-right: 10%;
 }
 .side-body-left{
-    height: calc(100vh - 50px);
+    height: calc(100vh - 53px);
     width: 10%;
     float: left;
     overflow-x: hidden;
@@ -316,7 +315,7 @@ a:hover {
     position: -webkit-sticky;
 }
 .side-body-right{
-    height: calc(100vh - 50px);
+    height: calc(100vh - 53px);
     width: 10%;
     float: right;
     overflow-x: hidden;
