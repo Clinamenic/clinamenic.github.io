@@ -89,13 +89,14 @@
 
 
 :root {
-    --column2: calc((100% - 25px) / 2);
-    --column3: calc((100% - 50px) / 3);
-    --column4: calc((100% - 75px) / 4);
+    --column2: calc((100% - 10px) / 2);
+    --column3: calc((100% - 20px) / 3);
+    --column4: calc((100% - 30px) / 4);
     --sphere: calc(100% - 10%);
     --right30: calc(100% + 30px);
     --left500: calc(-100% - 500px);
     --left1000: calc(-100% - 1000px);
+    --10percentminus10: calc(10% - 10px);
   }
 
 
@@ -129,9 +130,29 @@ h1{
     padding: 0px;
     margin: 0px;
 }
+.h1-section{
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    font-weight: 200;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
 h2{
     padding: 0px;
     margin: 0px;
+}
+.h2-section{
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 10px;
 }
 h3{
     padding: 0px;
@@ -150,7 +171,7 @@ a:hover {
 
 .header{
     position: fixed;
-    height: 60px;
+    height: 53px;
     background-color: black;
     border-bottom: 1px solid white;
     padding: 0px;
@@ -163,7 +184,7 @@ a:hover {
 }
 .nav-menu {
     display: flex;
-    margin-top: 9px;
+    margin-top: 6px;
 }
 .nav-item {
     margin: 5px;
@@ -198,7 +219,7 @@ a:hover {
     font-weight: 200;
 }
 .nav-logo{
-    padding-top: 9px;
+    padding-top: 6px;
 }
 
 .hamburger {
@@ -259,8 +280,8 @@ a:hover {
 
 /*Cellular Automata BW: https://raw.githubusercontent.com/Clinamenic/clinamenic.github.io/main/CA%20BW%20square%201.gif */
 .main-body-bg{
-    background-image: url(https://i.ibb.co/7JkGzDv/blackskyv3.png);
-    animation: background-drop 3s linear infinite;
+    background-image: url(https://i.ibb.co/nwc8m8L/Star-BG-Draft.png);
+    animation: background-drop 4s linear infinite;
     overflow-x: hidden
     align-items: flex-start;
 }
@@ -269,14 +290,52 @@ a:hover {
     margin-left: 10%;
     margin-right: 10%;
 }
-.side-body-right{
-    display: ;
+.side-body-left{
+    height: calc(100vh - 50px);
+    width: 10%;
+    float: left;
+    overflow-x: hidden;
+    text-align: center;
+    top: 0px;
+    position: sticky;
+    position: -webkit-sticky;
+}
+.sidebar-left{
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
     background-color: black;
-    
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-top-right-radius: 15px;
+    float: left;
+    overflow-x: hidden;
+    text-align: center;
+    margin-top: 10px;
+    top: 0px;
+    position: sticky;
+    position: -webkit-sticky;
+}
+.side-body-right{
+    height: calc(100vh - 50px);
     width: 10%;
     float: right;
     overflow-x: hidden;
     text-align: center;
+    top: 0px;
+    position: sticky;
+    position: -webkit-sticky;
+}
+.sidebar-right{
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    background-color: black;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-top-left-radius: 15px;
+    float: right;
+    overflow-x: hidden;
+    text-align: center;
+    margin-top: 10px;
     top: 0px;
     position: sticky;
     position: -webkit-sticky;
@@ -339,6 +398,10 @@ a:hover {
     height: 10px;
     width: 10px;
 }
+.spacer15{
+    height: 15px;
+    width: 15px;
+}
 .spacer25{
     height: 25px;
     width: 25px;
@@ -391,13 +454,29 @@ a:hover {
 
 
 .footer{
-    display: flex;
+    background-color: black;
     border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
     align-items: normal;
     overflow: scroll;
 }
+.footer-section{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    font-size: small;
+    color: white;
+    border-top: 1px solid white;
+    
+}
 .Clinamenic-Slide{
-    padding: 25px;
+    padding: 10px;
     cursor: default;
 }
 .footer-list{
@@ -417,24 +496,8 @@ a:hover {
 .newsletter{
     bottom: 0;
     display: grid;
-    padding: 10px;
-    padding-left: 20px;
-}
-
-
-.support-footer{
-    margin-top: 0px;
-    border-top: 1px solid white;
-    align-items: center;
-}
-.support-note{
-    font-size: 12;
-    padding: 25px;
-}
-.support-list{
-    display: flex;
-    padding-left: 25px;
-    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-bottom: 0px;
 }
 
 
@@ -445,7 +508,7 @@ a:hover {
     grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(infinite, 49%);
     justify-content: center;
-    grid-row-gap: 25px;
+    grid-row-gap: 10px;
 }
 /* original column width 48.5% colum gap 3%*/
 .gallery2 {
@@ -454,8 +517,8 @@ a:hover {
     grid-template-columns: repeat(2, var(--column2));
     grid-template-rows: repeat(infinite, 49%);
     justify-content: center;
-    grid-row-gap: 25px;
-    grid-column-gap: 25px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
 }
 /* original column width 32% column gap 2%*/
 .gallery3 {
@@ -464,8 +527,8 @@ a:hover {
     grid-template-columns: repeat(3, var(--column3));
     grid-template-rows: repeat(infinite, 48%);
     justify-content: center;
-    grid-row-gap: 25px;
-    grid-column-gap: 25px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
 }
 /* original column width 23.5%*/
 .gallery4 {
@@ -474,8 +537,8 @@ a:hover {
     grid-template-columns: repeat(4, var(--column4));
     grid-template-rows: repeat(infinite, 48%);
     justify-content: center;
-    grid-row-gap: 25px;
-    grid-column-gap: 25px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
 }
 .gallery-img {
     width: 100%;
@@ -498,6 +561,9 @@ a:hover {
     width: 100%;
     text-align: center;
 }
+.font-box{
+    background-color: black;
+}
 .client-tile{
     border: 1px solid white;
     border-radius: 10px;
@@ -507,10 +573,6 @@ a:hover {
     margin: 5px;
     width: 170px;
     text-align: center;
-}
-.client-tile:hover{
-    border: 3px solid white;
-    padding: 13px;
 }
 
 .tag{
@@ -550,7 +612,28 @@ a:hover {
     display: flex;
 }
 
-
+.webring-shell{
+    height: 60px;
+    width: 60px;
+    position: relative;
+    border: 1px dashed white;
+    border-radius: 45px;
+    display: flex;
+    animation: rotate-image 10s linear infinite;
+}
+.button-a{
+    position: relative;
+    font-size: small;
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+    border-radius: 45px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 4px;
+    padding-top: 15px;
+    animation: rotate-image-counter 10s linear infinite;
+}
 .button-a:hover{
     color: black;
     background-color: white;
@@ -580,7 +663,7 @@ a:hover {
 }
 @keyframes background-drop {
     100% { 
-        background-position-y: 1406px; 
+        background-position-y: 2000px; 
         background-position-x: 0px;
     } 
 }
@@ -611,9 +694,9 @@ a:hover {
 /* Slightly larger than standard tablet recs (tablet ~ min-width: 768px */
 @media only screen and (max-width: 830px) {
     .header{
-        padding-top: 9px;
+        padding-top: 6px;
         padding-bottom: 13px;
-        height: 60px;
+        height: 53px;
     }
     .nav-logo{
         padding-top: 0px;
@@ -621,8 +704,8 @@ a:hover {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 100px;
-        margin-left: 10px;
+        top: 57px;
+        margin-left: 5%;
         flex-direction: column;
         background-color: black;
         width: 200px;
@@ -659,10 +742,18 @@ a:hover {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .main-body{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
     .sub-header{
         display: none;
     }
     .side-body-right{
+        display: none;
+    }
+    .side-body-left{
         display: none;
     }
 
@@ -696,20 +787,20 @@ a:hover {
 
     .gallery2{
         grid-template-columns: repeat(1, 100%);
-        grid-row-gap: 25px;
+        grid-row-gap: 10px;
     }
     .gallery3 {
         display: grid;
         grid-template-columns: repeat(2, var(--column2));
         grid-template-rows: repeat(infinite, 49%);
-        grid-row-gap: 25px;
-        grid-column-gap: 25px;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
     }
     .gallery4{
         grid-template-columns: repeat(3, var(--column3));
         grid-template-rows: repeat(infinite, 48%);
-        grid-row-gap: 25px;
-        grid-column-gap: 25px;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
     }
 
 
@@ -733,7 +824,7 @@ a:hover {
         display: grid;
         grid-template-columns: repeat(1, 100%);
         grid-template-rows: repeat(infinite, 48%);
-        grid-gap: 25px;
+        grid-gap: 10px;
     }
     .gallery4{
         grid-template-columns: repeat(2, 47.5%);
@@ -745,14 +836,16 @@ a:hover {
         margin-bottom: 0%;
     }
 
+    .footer-section{
+        justify-content: center;
+        text-align: justify;
+    }
+
 }
 
 @media only screen and (max-width: 350px) {
 
-    .footer{
-        border-top: 1px solid white;
-        display: grid;
-    }
+
 
 }
 
