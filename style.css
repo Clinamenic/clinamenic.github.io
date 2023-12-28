@@ -256,11 +256,12 @@ a:hover {
 
 .sub-header{
     padding-top: 0px;
-    z-index: 2100;
+    z-index: 1;
 }
 .sub-nav-menu {
     display: flex;
     justify-content: center;
+    animation: drop-50 1s ease-out;
 }
 .sub-nav-item {
     margin-left: 5px;
@@ -273,18 +274,19 @@ a:hover {
     color: black;
     font-weight: 400;
     background-color: white;
-    z-index: 20000;
+    z-index: 2;
 }
 
 
 
 /*Cellular Automata BW: https://raw.githubusercontent.com/Clinamenic/clinamenic.github.io/main/CA%20BW%20square%201.gif */
 .main-body-bg{
-
     overflow-x: hidden
     align-items: flex-start;
+    background-color: black;
 }
 .main-body{
+    background-color: black;
     color: white;
     margin-left: 10%;
     margin-right: 10%;
@@ -298,6 +300,7 @@ a:hover {
     top: 0px;
     position: sticky;
     position: -webkit-sticky;
+    z-index: 50;
 }
 .sidebar-left{
     height: calc(100% - 10px);
@@ -313,6 +316,7 @@ a:hover {
     top: 0px;
     position: sticky;
     position: -webkit-sticky;
+    z-index: 1;
 }
 .side-body-right{
     height: calc(100vh - 53px);
@@ -552,6 +556,7 @@ a:hover {
     border-radius: 15px;
     padding: 25px;
     overflow-x: hidden;
+    z-index: 0;
 }
 .media-box{
     border: 1px solid white;
@@ -640,6 +645,7 @@ a:hover {
 
 
 
+
 @keyframes scroll-row {
     0%{ transform:translateX(110%) }
     100%{ transform:translateX(-1000px) }
@@ -665,6 +671,10 @@ a:hover {
         background-position-y: 2000px; 
         background-position-x: 0px;
     } 
+}
+@keyframes drop-50 {
+    0%{ transform:translateY(-50px) }
+    100%{ transform:translateY(0px) } 
 }
 @keyframes rotate-image {
     from { 
