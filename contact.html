@@ -54,7 +54,22 @@
             </a>
 
             <a href="https://solosalon.clinamenic.com/" class="nav-link">
-              <li class="nav-item">Newsletter</li>
+              <li
+                class="nav-item"
+                style="display: flex; padding-top: 0px; padding-bottom: 0px"
+              >
+                <img
+                  src="https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmPkLLN8piDzxRBThEBfZBmEiqBL1YPoBHPgtVvPvRrZoT"
+                  alt=""
+                  style="
+                    width: 29px;
+                    height: 29px;
+                    margin: 0px;
+                    border-radius: 10px;
+                  "
+                />
+                <p style="margin-left: 2px; padding-top: 5px">Newsletter</p>
+              </li>
             </a>
           </ul>
         </nav>
@@ -106,14 +121,94 @@
               style="color: white"
               class="body-link"
               >@clinamenic</a
-            ><br />
+            ><br /><br />
+            Alternatively, use the calendar below to schedule a call.
           </p>
         </div>
 
-        <div class="spacer100"></div>
-        <div class="spacer100"></div>
-        <div class="spacer100"></div>
-        <div class="spacer100"></div>
+        <div class="spacer10"></div>
+
+        <div class="spacer10"></div>
+
+        <div class="gallery2">
+          <div class="text-box" style="padding: 0px">
+            <h3 class="h3-section">Hourly</h3>
+            <p class="body-p" style="padding: 25px">
+              Hourly consultations are billed upon completion, at a rate of $100
+              per hour, with a month-long invoice period. <br /><br />If you are
+              not satisfied with the knowledge exchange of the consultation, no
+              costs will be incurred.
+            </p>
+          </div>
+          <div class="text-box" style="padding: 0px">
+            <h3 class="h3-section">Contract</h3>
+            <p class="body-p" style="padding: 25px">
+              Clinamenic LLC is available for contractual engagements, in the
+              form of a retainer or in terms of deliverables. <br /><br />If you
+              are interested in booking a discovery call, to discuss the
+              prospects of such an engagement, the hourly cost will be waived.
+            </p>
+          </div>
+        </div>
+
+        <div class="spacer10"></div>
+
+        <div
+          style="
+            border-color: white;
+            border: solid;
+            border-width: 1px;
+            border-radius: 10px;
+          "
+          id="my-cal-inline-hourly"
+          class="cal-embed"
+        ></div>
+
+        <script type="text/javascript">
+          (function (C, A, L) {
+            let p = function (a, ar) {
+              a.q.push(ar);
+            };
+            let d = C.document;
+            C.Cal =
+              C.Cal ||
+              function () {
+                let cal = C.Cal;
+                let ar = arguments;
+                if (!cal.loaded) {
+                  cal.ns = {};
+                  cal.q = cal.q || [];
+                  d.head.appendChild(d.createElement("script")).src = A;
+                  cal.loaded = true;
+                }
+                if (ar[0] === L) {
+                  const api = function () {
+                    p(api, arguments);
+                  };
+                  const namespace = ar[1];
+                  api.q = api.q || [];
+                  typeof namespace === "string"
+                    ? (cal.ns[namespace] = api) && p(api, ar)
+                    : p(cal, ar);
+                  return;
+                }
+                p(cal, ar);
+              };
+          })(window, "https://app.cal.com/embed/embed.js", "init");
+          Cal("init", { origin: "https://cal.com" });
+          Cal("inline", {
+            elementOrSelector: "#my-cal-inline-hourly",
+            calLink: "clinamenic/consultation",
+            layout: "month_view",
+          });
+          Cal("ui", {
+            styles: { branding: { brandColor: "#000000" } },
+            hideEventTypeDetails: false,
+            layout: "month_view",
+          });
+        </script>
+
+        <div class="spacer10"></div>
 
         <footer class="footer">
           <div class="footer-section" style="border-top: 0px; padding: 10px">
