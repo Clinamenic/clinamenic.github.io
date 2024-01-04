@@ -491,7 +491,7 @@ a:hover {
     padding-bottom: 10px;
     font-size: small;
     color: white;
-    border-top: 1px solid white;
+    border-top: 1px dashed white;
     
 }
 .Clinamenic-Slide{
@@ -606,7 +606,10 @@ a:hover {
     text-align: center;
 }
 .font-box{
+    border: 1px solid white;
+    border-radius: 15px;
     background-color: black;
+    overflow: hidden;
 }
 .client-tile{
     border: 1px solid white;
@@ -666,6 +669,25 @@ a:hover {
     flex-wrap: nowrap;
     margin-left: -10%;
     display: flex;
+}
+.oscillate-text{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    display: inline-block;
+    white-space: nowrap;
+    animation: oscillate 20s linear infinite;
+    animation-delay: 4s;
+}
+.oscillate-text:hover{
+    animation-play-state: paused ;
+}
+@keyframes oscillate {
+    0%{ transform: translate(0vw); }
+    40%{ transform: translate(calc(77vw - 100%)); }
+    60%{ transform: translate(calc(77vw - 100%)); }
+    80%{ transform: translate(0vw); }
+    100%{ transform: translate(0vw); } 
 }
 
 .webring-shell{
@@ -746,6 +768,9 @@ a:hover {
     0%{ opacity: 0%; }
     100%{ opacity: 100%; } 
 }
+
+
+
 
 
 
