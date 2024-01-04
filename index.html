@@ -133,6 +133,22 @@
         <div class="text-box" style="background-color: transparent;">        
           <div class="spacer25"></div>
           <div class="clinamenic-cube">
+            <div id="dynamicText"
+            style="
+              position: absolute;
+              margin-top: 270px;
+              margin-left: 210px;
+              color: yellow;
+              font-size: 23px;
+              font-family: 'Minecraft', sans-serif;
+              letter-spacing: 3px;
+              transform: rotate(-13deg);
+              animation: fade-in 4s linear, text-pulse 1.5s linear infinite;
+              z-index: 1;
+            "
+          >
+            ...Loading
+          </div>
             <img
               src="https://raw.githubusercontent.com/Clinamenic/clinamenic.github.io/main/SSC%20Cube%20GIF%20TransBG.gif"
               width="300"
@@ -489,6 +505,30 @@
 
 
     <script src="index.js"></script>
+
+    <script>
+      // Array of phrases
+      const phrases = [
+        "Codeslaw",
+        "on Fleek",
+        "Lucretius say",
+        "Pierce the veil",
+        "Swerve!",
+      ];
+  
+      // Function to get a random phrase from the array
+      function getRandomPhrase() {
+        const randomIndex = Math.floor(Math.random() * phrases.length);
+        return phrases[randomIndex];
+      }
+  
+      // Update the dynamic text element with a random phrase on page load
+      document.addEventListener("DOMContentLoaded", function() {
+        const dynamicTextElement = document.getElementById("dynamicText");
+        dynamicTextElement.textContent = getRandomPhrase();
+      });
+    </script>
+
   </body>
 </html>
 

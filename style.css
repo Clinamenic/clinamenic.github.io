@@ -62,8 +62,21 @@
     font-weight: 900;
 }
 
+
+
+/* Minecraft */
+@font-face {
+    font-family: "Minecraft";
+    src: url(https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmU7unjNWTCPP31NPy58rQeAhyMTRyNCw5ZHLNZgqak2LU);
+    src: url(https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmU7unjNWTCPP31NPy58rQeAhyMTRyNCw5ZHLNZgqak2LU) format("opentype");
+    font-weight: 100;
+}
+
+
+
 /* Roboto Mono Family */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 
 @font-face {
     font-family: "SundaePlush";
@@ -720,6 +733,7 @@ a:hover {
 
 
 
+
 @keyframes scroll-row {
     0%{ transform:translateX(110%) }
     100%{ transform:translateX(-1000px) }
@@ -767,6 +781,11 @@ a:hover {
 @keyframes fade-in {
     0%{ opacity: 0%; }
     100%{ opacity: 100%; } 
+}
+@keyframes text-pulse {
+    0%{ font-size: 25px; }
+    50%{ font-size: 30px; } 
+    100%{ font-size: 25px; }
 }
 
 
