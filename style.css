@@ -730,6 +730,15 @@ a:hover {
     background-color: white;
 }
 
+#dynamicText{
+
+}
+@media only screen and (max-width: 830px) {
+    #dynamicText{
+        display: none;
+    }
+}
+
 
 
 
@@ -783,9 +792,9 @@ a:hover {
     100%{ opacity: 100%; } 
 }
 @keyframes text-pulse {
-    0%{ font-size: 25px; }
-    50%{ font-size: 30px; } 
-    100%{ font-size: 25px; }
+    0%{ transform: scale(100%) transform: rotate(-13deg); }
+    50%{ transform: scale(120%) transform: rotate(-13deg); } 
+    100%{ transform: scale(100%) transform: rotate(-13deg); }
 }
 
 
@@ -800,13 +809,14 @@ a:hover {
         padding-top: 6px;
         padding-bottom: 13px;
         height: 53px;
+        z-index: 1;
     }
     .nav-logo{
         padding-top: 0px;
     }
     .nav-menu {
         position: fixed;
-        left: -100%;
+        left: 200%;
         top: 57px;
         margin-left: 5%;
         flex-direction: column;
@@ -816,20 +826,22 @@ a:hover {
         text-align: left;
         border: 1px solid white;
         transition: 0.5s;
+        z-index: 0;
 
     }
     .nav-menu.active {
-        left: 0;
+        left: calc(90% - 200px);
         padding: 10px;
     }
 
 
     .hamburger {
+        position: absolute;
         display: block;
         cursor: pointer;
         margin-top: 5px;
         margin-bottom: 5px;
-        padding-left: 25px;
+        left: calc(100% - 75px);
         align-content: center;
     }
     .hamburger.active .bar:nth-child(2) {
@@ -846,8 +858,8 @@ a:hover {
     }
 
     .main-body{
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 25px;
+        margin-right: 25px;
     }
 
     .sub-header{
@@ -882,6 +894,8 @@ a:hover {
     .newsletter{
         display: none;
     }
+    
+
 
 
     .text-box-container{
@@ -975,31 +989,4 @@ animation-timing-function: linear;
 
 
 
-.scroll-parent {
-    position: relative;
-    width: 100vw;
-    height: 20rem;
-    overflow-x: hidden;
-    white-space: nowrap;
-  }
-  
-  .scroll-element-primary {
-    height: inherit;
-    position: absolute;
-    display: block;
-    left: 0;
-    top: 0;
-    animation: scroll-primary 10s linear infinite;
-  }
-
-  
-  @keyframes scroll-primary {
-    from {
-      left: 100%;
-    }
-    to {
-      left: -100%;
-    }
-  }
-  
 
