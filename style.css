@@ -315,12 +315,12 @@ a:hover {
 .main-body{
     background-color: black;
     color: white;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .side-body-left{
     height: calc(100vh - 53px);
-    width: 10%;
+    width: 100px;
     float: left;
     overflow-x: hidden;
     text-align: center;
@@ -347,7 +347,7 @@ a:hover {
 }
 .side-body-right{
     height: calc(100vh - 53px);
-    width: 10%;
+    width: 100px;
     float: right;
     overflow-x: hidden;
     text-align: center;
@@ -792,9 +792,9 @@ a:hover {
     100%{ opacity: 100%; } 
 }
 @keyframes text-pulse {
-    0%{ transform: scale(100%) transform: rotate(-13deg); }
-    50%{ transform: scale(120%) transform: rotate(-13deg); } 
-    100%{ transform: scale(100%) transform: rotate(-13deg); }
+    0%{ font-size: 20px; }
+    50%{ font-size: 25px; } 
+    100%{ font-size: 20px; }
 }
 
 
