@@ -651,6 +651,26 @@ a:hover {
 .client-tile:hover img{
     filter: invert(100%);
 }
+.position-tile{
+    border: 1px dashed white;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    padding-top: 15px;
+    margin: 5px;
+    width: 170px;
+    height: 210px;
+    text-align: center;
+}
+.position-tile:hover{
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+}
+.position-tile:hover img{
+    filter: invert(100%);
+}
 
 .tag{
     background-color: black;
@@ -782,10 +802,12 @@ a:hover {
 
 #dynamicText{
     position: absolute;
-    margin-top: 270px;
-    margin-left: 200px;
+    height: 20px;
+    width: 300px;
+    margin-top: 250px;
+    margin-left: 190px;
     color: yellow;
-    font-size: 23px;
+    font-size: 17px;
     font-family: 'Minecraft', sans-serif;
     letter-spacing: 3px;
     animation: fade-in 4s linear, text-pulse 1.5s linear infinite;
@@ -851,9 +873,9 @@ a:hover {
     100%{ opacity: 100%; } 
 }
 @keyframes text-pulse {
-    0%{ font-size: 20px; }
-    50%{ font-size: 25px; } 
-    100%{ font-size: 20px; }
+    0%{ font-size: 17px; }
+    50%{ font-size: 22px; } 
+    100%{ font-size: 17px; }
 }
 
 
