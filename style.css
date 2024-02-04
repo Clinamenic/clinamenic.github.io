@@ -632,14 +632,24 @@ a:hover {
     overflow: hidden;
 }
 .client-tile{
-    border: 1px solid white;
+    border: 0px dashed white;
     border-radius: 10px;
-    background-color: white;
-    color: black;
-    padding: 15px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    padding-top: 15px;
     margin: 5px;
     width: 170px;
+    height: 170px;
     text-align: center;
+}
+.client-tile:hover{
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+}
+.client-tile:hover img{
+    filter: invert(100%);
 }
 
 .tag{
@@ -771,7 +781,16 @@ a:hover {
 }
 
 #dynamicText{
-
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 200px;
+    color: yellow;
+    font-size: 23px;
+    font-family: 'Minecraft', sans-serif;
+    letter-spacing: 3px;
+    animation: fade-in 4s linear, text-pulse 1.5s linear infinite;
+    transform: rotate(-14deg);
+    z-index: 1;
 }
 @media only screen and (max-width: 830px) {
     #dynamicText{
