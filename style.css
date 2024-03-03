@@ -73,6 +73,23 @@
 }
 
 
+/* Avara */
+@font-face {
+    font-family: "Avara";
+    src: url(https://pinata.clinamenic.com/ipfs/QmRxZoMdmty4ZENkXdfu3ECs6vxBc5NNDkAjdagBsSALD7);
+    src: url(https://pinata.clinamenic.com/ipfs/QmRxZoMdmty4ZENkXdfu3ECs6vxBc5NNDkAjdagBsSALD7) format("opentype");
+    font-weight: 100;
+}
+
+/* Vampiro One */
+@font-face {
+    font-family: "VampiroOne";
+    src: url(https://pinata.clinamenic.com/ipfs/QmZ7WuS8uUx2oaPbpEYUGUvRmJhGxdLnZH1JKY9W2h7ESr);
+    src: url(https://pinata.clinamenic.com/ipfs/QmZ7WuS8uUx2oaPbpEYUGUvRmJhGxdLnZH1JKY9W2h7ESr) format("truetype");
+    font-weight: 100;
+}
+
+
 
 /* Roboto Mono Family */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
@@ -116,6 +133,7 @@
     --left500: calc(-100% - 500px);
     --left1000: calc(-100% - 1000px);
     --10percentminus10: calc(10% - 10px);
+    --sidebodydynamic: calc((100vw - 1000px) / 2);
   }
 
 
@@ -314,15 +332,18 @@ a:hover {
 
 /*Cellular Automata BW: https://raw.githubusercontent.com/Clinamenic/clinamenic.github.io/main/CA%20BW%20square%201.gif */
 .main-body-bg{
-    overflow-x: hidden
     align-items: flex-start;
     background-color: black;
+    height: 100%;
+
 }
 .main-body{
     background-color: black;
     color: white;
     margin-left: 100px;
     margin-right: 100px;
+
+
 }
 .side-body-left{
     height: calc(100vh - 53px);
@@ -335,8 +356,11 @@ a:hover {
     position: -webkit-sticky;
     z-index: 50;
 }
+
+
 .sidebar-left{
     height: calc(100% - 10px);
+
     width: calc(100% - 10px);
     background-color: black;
     border-top: 1px solid white;
@@ -351,6 +375,7 @@ a:hover {
     position: -webkit-sticky;
     z-index: 1;
 }
+
 .side-body-right{
     height: calc(100vh - 53px);
     width: 100px;
@@ -360,6 +385,7 @@ a:hover {
     top: 0px;
     position: sticky;
     position: -webkit-sticky;
+    z-index: 50;
 }
 .sidebar-right{
     height: calc(100% - 10px);
@@ -375,6 +401,7 @@ a:hover {
     top: 0px;
     position: sticky;
     position: -webkit-sticky;
+    z-index: 1;
 }
 
 
@@ -384,6 +411,8 @@ a:hover {
     line-height: 1.5;
 }
 .body-poem{
+    position: relative;
+
     text-align: left;
     font-size: 20;
     font-weight: 100;
@@ -578,6 +607,15 @@ a:hover {
     grid-row-gap: 10px;
     grid-column-gap: 10px;
 }
+.gallery3-1 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, var(--column3));
+    grid-template-rows: repeat(infinite, 48%);
+    justify-content: center;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
 /* original column width 23.5%*/
 .gallery4 {
     display: grid;
@@ -729,7 +767,6 @@ a:hover {
 }
 .marquee-text{
     animation: scroll-text-500 20s linear infinite;
-    overflow-x: ;
     flex-wrap: nowrap;
     margin-left: -10%;
     display: flex;
@@ -819,6 +856,26 @@ a:hover {
         display: none;
     }
 }
+#dynamicTextAlt{
+    position: absolute;
+    text-align: center;
+    height: 20px;
+    width: 300px;
+    margin-top: 20px;
+    right: 50px;
+    color: yellow;
+    font-size: 17px;
+    font-family: 'Minecraft', sans-serif;
+    letter-spacing: 3px;
+    animation: text-pulse 1.5s linear infinite;
+    transform: rotate(8deg);
+    z-index: 1;
+}
+@media only screen and (max-width: 830px) {
+    #dynamicTextAlt{
+        display: none;
+    }
+}
 
 
 
@@ -884,8 +941,26 @@ a:hover {
 
 
 
+/* For large desktops, to prevent main body content growing too large */
+@media only screen and (min-width: 1200px) {
+    
+    .side-body-left{
+        width: var(--sidebodydynamic);
+    }
+    .side-body-right{
+        width: var(--sidebodydynamic);
+    }
 
+    .main-body{
+        margin-left: var(--sidebodydynamic);
+        margin-right: var(--sidebodydynamic);
+        justify-content: center;
+    }
 
+    #dynamicTextAlt {
+        right: var(--sidebodydynamic);
+    }
+}
 
 
 
@@ -1000,6 +1075,10 @@ a:hover {
         grid-template-rows: repeat(infinite, 49%);
         grid-row-gap: 10px;
         grid-column-gap: 10px;
+    }
+    .gallery3-1 {
+        grid-template-columns: repeat(1, 100%);
+        grid-row-gap: 10px;
     }
     .gallery4{
         grid-template-columns: repeat(3, var(--column3));

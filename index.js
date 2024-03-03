@@ -1,4 +1,18 @@
+const phrases = [
+  "Codeslaw", "on Fleek", "Lucretius say", "Pierce the veil", "Swerve", "Not a lawyer", "Solo contendere", "What me, hurry?", "Circa 50 BCE", "Cheers!", "Imopolex G", "SaaSy", "Nice marmot", "Goo goo g'joob", "Clinsigliere",
+];
 
+// Function to get a random phrase from the array
+function getRandomPhrase() {
+  const randomIndex = Math.floor(Math.random() * phrases.length);
+  return phrases[randomIndex];
+}
+
+// Update the dynamic text element with a random phrase on page load
+document.addEventListener("DOMContentLoaded", function() {
+  const dynamicTextElement = document.getElementById("dynamicTextAlt");
+  dynamicTextElement.textContent = getRandomPhrase();
+});
 
 window.addEventListener("scroll", function () {
     var scrollPosition = window.pageYOffset;

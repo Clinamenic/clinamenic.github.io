@@ -128,11 +128,7 @@
         <div class="text-box" style="background-color: transparent; ">        
           <div class="spacer25"></div>
           <div class="clinamenic-cube">
-            <div style="overflow: hidden; height: 80px; height: 120px;">
-              <div id="dynamicText">
-              ...Loading
-              </div>
-            </div>
+
 
             <img
               src="https://raw.githubusercontent.com/Clinamenic/clinamenic.github.io/main/img/SSC%20Cube%20GIF%20TransBG.gif"
@@ -142,9 +138,7 @@
             />
           </div>
 
-          <div class="spacer10"></div>
-
-          <h1 class="heading1" style="animation: fade-in 3s ease-in; font-size: 36px; letter-spacing: 1px; font-weight: 300;">Clinamenic LLC</h1>
+          <h1 class="heading1" style="animation: fade-in 3s ease-in; font-size: 34px; letter-spacing: 1px; font-weight: 300; text-align: center;">Clinamenic LLC</h1>
 
           <div class="spacer10"></div>
 
@@ -155,13 +149,23 @@
         </div>
         <div class="spacer10"></div>
 
-        <div class="text-box" style="background-color: black;">
-          <p class="body-p" >
-            Clinamenic LLC is a consultancy applying cutting-edge technology to
-            the design, governance, and operation of virtual organizations. <br /><br />If your
-            startup or DAO is seeking to build sound administrative foundations and incorporate smart contracts, Clinamenic LLC can help you identify needs
-            and implement solutions.
-          </p>
+        <div class="gallery3-1">
+          <div class="text-box" style="padding: 0px">
+            <h1 class="h1-section" style="font-weight: 300; font-size: 18px; text-align: center; letter-spacing: 2px;"><em>Governance</em></h1>
+            <p class="body-p" style="padding: 20px; text-align: left;">Clinamenic LLC can create proposal templates and governance processes suited to your organization's needs.</p>
+
+          </div>
+          <div class="text-box" style="padding: 0px">
+            <h1 class="h1-section" style="font-weight: 300; font-size: 18px; text-align: center; letter-spacing: 2px;"><em>Onchain Ops</em></h1>
+            <p class="body-p" style="padding: 20px; text-align: left;">Clinamenic LLC can implement tools for onchain operations, and provide coaching services for their usage.</p>
+          </div>
+          <div class="text-box" style="padding: 0px">
+            <h1 class="h1-section" style="font-weight: 300; font-size: 18px; text-align: center; letter-spacing: 2px;"><em>Graphic Design</em></h1>
+            <p class="body-p" style="padding: 20px; text-align: left;">Clinamenic LLC can provide basic graphic design services for websites, marketing campaigns, and merchandise.
+
+            </p>
+
+          </div>
         </div>
 
         <div class="spacer10"></div>
@@ -249,7 +253,7 @@
         <div class="spacer10"></div>
 
         <div class="text-box" style="background: transparent; background-image: url(https://i.ibb.co/nwc8m8L/Star-BG-Draft.png);
-        animation: background-drop 4s linear infinite;">
+        animation: background-drop 4s linear infinite; position: relative;;">
           <p class="body-poem">
             The atoms, as their own weight bears them down<br />
             Plumb through the void, at scarce determined times,<br />
@@ -277,12 +281,17 @@
         <div class="spacer10"></div>
         <footer class="footer">
           <div class="footer-section" style="border-top: 0px; padding: 10px">
+            <div style="overflow: hidden; height: 80px; height: 120px;">
+              <div id="dynamicTextAlt">
+              ...Loading
+              </div>
+            </div>
             <a href="#" class="Clinamenic-Slide">
               <img
                 src="https://raw.githubusercontent.com/Clinamenic/clinamenic.github.io/main/img/SSC%20slide.gif"
                 width="85"
               />
-            </a>
+            </a> 
 
             <ul class="newsletter">
               <li class="footer-list-title" style="padding-bottom: 10px">
@@ -379,25 +388,6 @@
 
     <script src="index.js"></script>
 
-    <script>
-      // Pierce the veil
-      // 
-      const phrases = [
-        "Codeslaw", "on Fleek", "Lucretius say", "Pierce the veil", "Swerve", "Not a lawyer", "Solo contendere", "What me, hurry?", "Circa 50 BCE", "Cheers!", "Imopolex G", "SaaSy", "Nice marmot", "Goo goo g'joob", "Clinsigliere",
-      ];
-  
-      // Function to get a random phrase from the array
-      function getRandomPhrase() {
-        const randomIndex = Math.floor(Math.random() * phrases.length);
-        return phrases[randomIndex];
-      }
-  
-      // Update the dynamic text element with a random phrase on page load
-      document.addEventListener("DOMContentLoaded", function() {
-        const dynamicTextElement = document.getElementById("dynamicText");
-        dynamicTextElement.textContent = getRandomPhrase();
-      });
-    </script>
 
   </body>
 </html>
