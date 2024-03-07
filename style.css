@@ -727,6 +727,14 @@ a:hover {
     margin: 4px;
     border: 2px solid white;
 }
+.tag-section{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid white;
+}
 
 
 
