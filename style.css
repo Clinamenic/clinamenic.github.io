@@ -721,15 +721,15 @@ a:hover {
     filter: invert(100%);
 }
 .position-tile{
-    border: 1px dashed white;
+    border: 0px dashed white;
     border-radius: 10px;
     background-color: black;
     color: white;
     padding: 5px;
     padding-top: 15px;
     margin: 5px;
-    width: 170px;
-    height: 210px;
+    width: 150px;
+    height: 200px;
     text-align: center;
 }
 .position-tile:hover{
