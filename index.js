@@ -1,5 +1,7 @@
+// Pierce the veil
+// Binary & Tweed
 const phrases = [
-  "Codeslaw", "on Fleek", "Lucretius say", "Pierce the veil", "Swerve", "Not a lawyer", "Solo contendere", "What me, hurry?", "Circa 50 BCE", "Cheers!", "Imopolex G", "SaaSy", "Nice marmot", "Goo goo g'joob", "Clinsigliere",
+  "Codeslaw", "on Fleek", "Lucretius say", "Pierce the veil", "Swerve", "Not a lawyer", "Solo contendere", "What me, hurry?", "Circa 50 BCE", "Cheers!", "Imopolex G", "SaaSy", "Nice marmot", "Goo goo g'joob", "Clinsigliere", "Binary & Tweed",
 ];
 
 // Function to get a random phrase from the array

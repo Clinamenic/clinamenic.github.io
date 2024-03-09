@@ -89,6 +89,22 @@
     font-weight: 100;
 }
 
+/* Monaspace Krypton */
+@font-face {
+    font-family: "MonaspaceKrypton";
+    src: url(https://pinata.clinamenic.com/ipfs/QmZC5Z5xxTt6g3JWSy23P6eiX7ffFc1iPJUt9ADjJuopZx);
+    src: url(https://pinata.clinamenic.com/ipfs/QmZC5Z5xxTt6g3JWSy23P6eiX7ffFc1iPJUt9ADjJuopZx) format("opentype");
+    font-weight: 100;
+}
+@font-face {
+    font-family: "MonaspaceKrypton";
+    src: url(https://pinata.clinamenic.com/ipfs/QmZq6wnRNfRHLovqN4UZTQfVzEbQQSD33GXZQgd8GLiE5r);
+    src: url(https://pinata.clinamenic.com/ipfs/QmZq6wnRNfRHLovqN4UZTQfVzEbQQSD33GXZQgd8GLiE5r) format("opentype");
+    font-weight: 200;
+}
+
+
+
 
 
 /* Roboto Mono Family */
@@ -151,10 +167,12 @@ html {
     color: white;
     scroll-behavior: smooth;
     cursor: url('https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmXGbD6CTvMWKqdHGEHAzmAju3ZxxkdzUVGpgXSYRntc5K') 9 9, auto;
+    
 }
 
 body{
     margin: 0px;
+
 }
 
 /* "list-style: none" prevents bullet points */
@@ -176,8 +194,8 @@ h1{
     background-color: white;
     padding: 10px;
     font-weight: 200;
-    font-size: 25px;
-    letter-spacing: 10px;
+    font-size: 30px;
+    letter-spacing: 5px;
 }
 h2{
     padding: 0px;
@@ -189,9 +207,9 @@ h2{
     color: black;
     background-color: white;
     padding: 10px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 200;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
 }
 h3{
     padding: 0px;
@@ -205,7 +223,7 @@ h3{
     padding: 10px;
     font-size: 20px;
     font-weight: 200;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
 }
 a {
     color: white;
@@ -335,6 +353,7 @@ a:hover {
     align-items: flex-start;
     background-color: black;
     height: 100%;
+    
 
 }
 .main-body{
@@ -342,6 +361,7 @@ a:hover {
     color: white;
     margin-left: 100px;
     margin-right: 100px;
+    
 
 
 }
@@ -412,7 +432,6 @@ a:hover {
 }
 .body-poem{
     position: relative;
-
     text-align: left;
     font-size: 20;
     font-weight: 100;
@@ -500,6 +519,18 @@ a:hover {
     overflow: scroll;
 }
 
+.clinamenic-title{
+    animation: fade-in 3s ease-in; 
+    font-size: 37px; 
+    letter-spacing: 1px; 
+    font-weight: 300; 
+    text-align: center;
+}
+@media only screen and (max-width: 480px) {
+    .clinamenic-title {
+        font-size: 30px;
+    }
+}
 
 .heading1{
     display: flex;
@@ -677,8 +708,8 @@ a:hover {
     padding: 5px;
     padding-top: 15px;
     margin: 5px;
-    width: 170px;
-    height: 170px;
+    width: 150px;
+    height: 160px;
     text-align: center;
 }
 .client-tile:hover{
@@ -733,7 +764,7 @@ a:hover {
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-top: 1px solid white;
+    border-top: 1px dashed white;
 }
 
 
@@ -987,21 +1018,22 @@ a:hover {
     }
     .nav-menu {
         position: fixed;
-        left: calc(100vw + 0px);
+        left: calc(150vw + 0px);
         top: 57px;
 
         flex-direction: column;
         background-color: black;
-        width: 200px;
+        width: calc(100vw - 24px);
         border-radius: 15px;
         text-align: left;
         border: 1px solid white;
-        transition: 0.5s;
+        transition: 0.6s;
         z-index: 0;
 
     }
+    
     .nav-menu.active {
-        left: calc(100vw - 225px);
+        left: 12px;
         padding: 10px;
     }
 
@@ -1053,8 +1085,8 @@ a:hover {
     .body-poem{
         margin-left: 0%;
         margin-right: 0%;
-        font-size: x-small;
-        font-weight: 300;
+        font-size: 9px;
+        font-weight: 100;
     }
 
     .writing-title{
