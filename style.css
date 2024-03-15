@@ -1151,9 +1151,9 @@ a:hover {
         grid-gap: 10px;
     }
     .gallery4{
-        grid-template-columns: repeat(2, 47.5%);
+        grid-template-columns: repeat(2, 49%);
         grid-template-rows: repeat(infinite, 49%);
-        grid-column-gap: 5%;
+        grid-column-gap: 10px;
     }
 
     .gallery__img {
