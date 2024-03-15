@@ -333,6 +333,7 @@ a:hover {
     animation: drop-50 1s ease-out;
 }
 .sub-nav-item {
+    margin-bottom: 10px;
     margin-left: 5px;
     margin-right: 5px;
     padding: 5px;
@@ -1065,7 +1066,22 @@ a:hover {
         margin-right: 12px;
     }
 
+    /* For if I want to have sub-header appear on mobile:         
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        overflow-x: hidden 
+    */
     .sub-header{
+        display: none;
+    }
+        /* For if I want to have sub-nav-menu appear on mobile:         
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        overflow-x: hidden 
+    */
+    .sub-nav-menu{
         display: none;
     }
     .side-body-right{
