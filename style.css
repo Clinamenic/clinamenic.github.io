@@ -64,6 +64,16 @@
 
 
 
+/* MEK-Mono */
+@font-face {
+    font-family: "MEK-Mono";
+    src: url(https://pinata.clinamenic.com/ipfs/QmXtPaqAUjfpmCGg3WQdpgiuvsRH9G6SWTL2iLVa8bnfKP);
+    src: url(https://pinata.clinamenic.com/ipfs/QmXtPaqAUjfpmCGg3WQdpgiuvsRH9G6SWTL2iLVa8bnfKP) format("opentype");
+    font-weight: 100;
+}
+
+
+
 /* Minecraft */
 @font-face {
     font-family: "Minecraft";
@@ -386,7 +396,7 @@ a:hover {
     background-color: black;
     border-top: 1px solid white;
     border-right: 1px solid white;
-    border-top-right-radius: 15px;
+    border-top-right-radius: 10px;
     float: left;
     overflow-x: hidden;
     text-align: center;
@@ -414,7 +424,7 @@ a:hover {
     background-color: black;
     border-top: 1px solid white;
     border-left: 1px solid white;
-    border-top-left-radius: 15px;
+    border-top-left-radius: 10px;
     float: right;
     overflow-x: hidden;
     text-align: center;
@@ -557,8 +567,8 @@ a:hover {
     border-top: 1px solid white;
     border-right: 1px solid white;
     border-left: 1px solid white;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     align-items: normal;
     overflow: scroll;
 }
@@ -683,7 +693,7 @@ a:hover {
     position: relative;
     background-color: black;
     border: 1px solid white;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 25px;
     overflow-x: hidden;
     z-index: 0;
@@ -697,7 +707,7 @@ a:hover {
 }
 .font-box{
     border: 1px solid white;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: black;
     overflow: hidden;
 }
@@ -743,6 +753,7 @@ a:hover {
 }
 
 .tag{
+    font-size: 15px;
     background-color: black;
     color: white;
     border: 1px dashed white;
@@ -762,9 +773,7 @@ a:hover {
 .tag-section{
     display: flex;
     flex-wrap: wrap;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
     border-top: 1px dashed white;
 }
 
@@ -975,6 +984,11 @@ a:hover {
     100%{ font-size: 17px; }
 }
 
+@keyframes jiggle {
+    0%{ transform:translateY(0px)}
+    50%{ transform:translateY(3px) }
+}
+
 
 
 
@@ -1025,7 +1039,7 @@ a:hover {
         flex-direction: column;
         background-color: black;
         width: calc(100vw - 24px);
-        border-radius: 15px;
+        border-radius: 10px;
         text-align: left;
         border: 1px solid white;
         transition: 0.6s;
