@@ -1,7 +1,7 @@
 // Pierce the veil
 // Legalize ranch
 const phrases = [
-  "Codeslaw", "on Fleek", "Lucretius say", "Pierce the veil", "Swerve", "Not a lawyer", "Solo contendere", "What me, hurry?", "Circa 50 BCE", "Cheers!", "Imopolex G", "SaaSy", "Nice marmot", "Goo goo g'joob", "Clinsigliere", "Binary & Tweed", "Ranch it up", "Sociocrat",
+  "Codeslaw", "on Fleek", "Lucretius say", "Pierce the veil", "Swerve", "Not a lawyer", "Solo contendere", "What me, hurry?", "Circa 50 BCE", "Cheers!", "Imopolex G", "SaaSy", "Nice marmot", "Goo goo g'joob", "Clinsigliere", "Binary & Tweed", "Ranch it up", "Sociocrat", "such colophon",
 ];
 
 // Function to get a random phrase from the array
@@ -39,7 +39,7 @@ window.addEventListener("scroll", function () {
   } else {
     // If the user has not scrolled more than 0 pixels, revert to the default positioning
     document.querySelector(".sub-header").style.position = "sticky";
-    document.querySelector(".sub-header").style.top = "0";
+    document.querySelector(".sub-header").style.top = "0px";
   }
 });
 
@@ -49,10 +49,10 @@ window.addEventListener("scroll", function () {
   // If the user has scrolled more than 100 pixels, add a fixed positioning to the navbar
   if (scrollPosition > 0) {
     document.querySelector(".side-body-right").style.position = "sticky";
-    document.querySelector(".side-body-right").style.top = "53px";
+    document.querySelector(".side-body-right").style.top = "0px";
   } else {
     document.querySelector(".side-body-right").style.position = "sticky";
-    document.querySelector(".side-body-right").style.top = "0";
+    document.querySelector(".side-body-right").style.top = "0px";
   }
 });
 
@@ -62,10 +62,10 @@ window.addEventListener("scroll", function () {
   // If the user has scrolled more than 100 pixels, add a fixed positioning to the navbar
   if (scrollPosition > 0) {
     document.querySelector(".side-body-left").style.position = "sticky";
-    document.querySelector(".side-body-left").style.top = "53px";
+    document.querySelector(".side-body-left").style.top = "0px";
   } else {
     document.querySelector(".side-body-left").style.position = "sticky";
-    document.querySelector(".side-body-left").style.top = "0";
+    document.querySelector(".side-body-left").style.top = "0px";
   }
 });
 

@@ -253,6 +253,10 @@ a:hover {
     height: 53px;
     background-color: black;
     border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     padding: 0px;
     padding-left: 25px;
     margin-top: 0px;
@@ -263,7 +267,7 @@ a:hover {
 }
 .nav-menu {
     display: flex;
-    margin-top: 6px;
+    margin-top: 7px;
 }
 .nav-item {
     margin: 5px;
@@ -293,6 +297,9 @@ a:hover {
     font-weight: 400;
     border: 1px solid black;
     background-color: white
+}
+.nav-link{
+    font-size: 14px;
 }
 .nav-link:hover{
     font-weight: 200;
@@ -377,7 +384,7 @@ a:hover {
 
 }
 .side-body-left{
-    height: calc(100vh - 53px);
+    height: calc(100vh);
     width: 100px;
     float: left;
     overflow-x: hidden;
@@ -390,25 +397,21 @@ a:hover {
 
 
 .sidebar-left{
-    height: calc(100% - 10px);
-
+    height: calc(100%);
     width: calc(100% - 10px);
     background-color: black;
-    border-top: 1px solid white;
     border-right: 1px solid white;
-    border-top-right-radius: 10px;
     float: left;
     overflow-x: hidden;
     text-align: center;
-    margin-top: 10px;
-    top: 0px;
+    top: -10px;
     position: sticky;
     position: -webkit-sticky;
     z-index: 1;
 }
 
 .side-body-right{
-    height: calc(100vh - 53px);
+    height: calc(100vh);
     width: 100px;
     float: right;
     overflow-x: hidden;
@@ -419,16 +422,13 @@ a:hover {
     z-index: 50;
 }
 .sidebar-right{
-    height: calc(100% - 10px);
+    height: calc(100%);
     width: calc(100% - 10px);
     background-color: black;
-    border-top: 1px solid white;
     border-left: 1px solid white;
-    border-top-left-radius: 10px;
     float: right;
     overflow-x: hidden;
     text-align: center;
-    margin-top: 10px;
     top: 0px;
     position: sticky;
     position: -webkit-sticky;
@@ -515,8 +515,11 @@ a:hover {
 
 .writing-title{
     font-weight: 400;
-    font-size: medium;
-    height: 80px;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .writing-title:hover{
     font-weight: 600;
@@ -694,7 +697,7 @@ a:hover {
     background-color: black;
     border: 1px solid white;
     border-radius: 10px;
-    padding: 25px;
+    padding: 20px;
     overflow-x: hidden;
     z-index: 0;
 }
@@ -1117,10 +1120,6 @@ a:hover {
         margin-right: 0%;
         font-size: 9px;
         font-weight: 100;
-    }
-
-    .writing-title{
-        height: 80px;
     }
 
 
