@@ -247,6 +247,18 @@ a:hover {
     text-decoration: none;
     font-weight: 400;
 }
+.bold-a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    cursor: url('https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmXGbD6CTvMWKqdHGEHAzmAju3ZxxkdzUVGpgXSYRntc5K') 9 9, auto;
+
+}
+.bold-a:hover {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
 
 .header{
     position: fixed;
@@ -263,7 +275,6 @@ a:hover {
     position: relative;
     color: white;
     z-index: 2000;
-
 }
 .nav-menu {
     display: flex;
@@ -701,6 +712,23 @@ a:hover {
     overflow-x: hidden;
     z-index: 0;
 }
+.experience-box{
+    position: relative;
+    background-color: black;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding-left: 30px; 
+    padding-right: 30px;
+    overflow-x: hidden;
+    z-index: 0;
+}
+@media only screen and (max-width: 400px) {
+    .experience-box{
+        justify-content: left;
+    }
+}
+
 .media-box{
     border: 1px solid white;
     border-radius: 10px;
@@ -715,23 +743,26 @@ a:hover {
     overflow: hidden;
 }
 .client-tile{
+    display: flex;
+    align-content: center;
+    justify-content: left;
     border: 0px dashed white;
     border-radius: 10px;
     background-color: black;
     color: white;
-    padding: 5px;
-    padding-top: 15px;
     margin: 5px;
-    width: 150px;
-    height: 160px;
+    width: 165px;
+    height: 60px;
     text-align: center;
 }
-.client-tile:hover{
+
+
+.old-client-tile:hover{
     border: 1px solid white;
     background-color: white;
     color: black;
 }
-.client-tile:hover img{
+.old-client-tile:hover img{
     filter: invert(100%);
 }
 .position-tile{
@@ -990,6 +1021,15 @@ a:hover {
 @keyframes jiggle {
     0%{ transform:translateY(0px)}
     50%{ transform:translateY(4px) }
+}
+
+@keyframes fade-up {
+    0%{ opacity: 0%; transform:translateY(25px)}
+    100%{ opacity: 100%; transform:translateY(0px)} 
+}
+@keyframes fade-down {
+    0%{ opacity: 0%; transform:translateY(-25px)}
+    100%{ opacity: 100%; transform:translateY(0px)} 
 }
 
 
