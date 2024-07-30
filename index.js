@@ -1,7 +1,7 @@
 // Pierce the veil
-// Legalize ranch
+// 
 const phrases = [
-  "Codeslaw", "on Fleek", "Lucretius say", "Pierce the veil", "Swerve", "Not a lawyer", "Solo contendere", "What me, hurry?", "Circa 50 BCE", "Cheers!", "Imopolex G", "SaaSy", "Nice marmot", "Goo goo g'joob", "Clinsigliere", "Binary & Tweed", "Ranch it up", "Sociocrat", "such colophon",
+  "Codeslaw", "on Fleek", "Lucretius say", "Swerve", "Not legal advice", "Solo contendere", "What me, hurry?", "Cheers!", "Imopolex G", "SaaSy", "Nice marmot", "Goo goo g'joob", "Clinsigliere", "Binary & Tweed", "Ranch it up", "Sociocrat", "such colophon", "Live and drink", "wu gwei", "Naturlich", 
 ];
 
 // Function to get a random phrase from the array
