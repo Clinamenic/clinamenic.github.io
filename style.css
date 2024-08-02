@@ -453,11 +453,14 @@ a:hover {
     line-height: 1.5;
 }
 .body-poem{
-    position: relative;
-    text-align: left;
-    font-size: 20;
-    font-weight: 100;
-    line-height: 1.8;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+@media only screen and (max-width: 800px) {
+    .body-poem{
+        font-size: 12px;
+        padding: 0px;
+    }
 }
 .body-list{
     font-weight: 300;
@@ -1160,12 +1163,6 @@ a:hover {
         font-size: small;
         margin-left: 0px;
         margin-right: 0px;
-    }
-    .body-poem{
-        margin-left: 0%;
-        margin-right: 0%;
-        font-size: 9px;
-        font-weight: 100;
     }
 
 
